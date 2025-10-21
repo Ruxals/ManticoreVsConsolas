@@ -12,16 +12,11 @@ namespace ManticoreVsConsolas
         private int _range; 
        
         public int HP { get { return _hp; } set { _hp = value; } }
-        public int Range => _range;
+        public int Range {get { return _range; } set { _range = value; } }
 
         public void Damage(int damage) 
         {
             HP -= damage;
-        }
-
-        public Player(int range)
-        {
-            _range = range;
         }
 
 
